@@ -2,4 +2,6 @@ Test Repo 1
 
 Test commit
 
-Test cpmmit directly from GitHub
+Test commit directly from GitHub
+
+Test commit from computer
