@@ -7,25 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		108967F72C48073F00E54029 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108967F62C48073F00E54029 /* Dish.swift */; };
+		108967FD2C4809C000E54029 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108967FC2C4809C000E54029 /* Data.swift */; };
 		88B9867C2C3D46EE00F25A60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B9867B2C3D46EE00F25A60 /* AppDelegate.swift */; };
 		88B9867E2C3D46EE00F25A60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B9867D2C3D46EE00F25A60 /* SceneDelegate.swift */; };
-		88B986802C3D46EE00F25A60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B9867F2C3D46EE00F25A60 /* ViewController.swift */; };
+		88B986802C3D46EE00F25A60 /* MainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B9867F2C3D46EE00F25A60 /* MainMenuVC.swift */; };
 		88B986832C3D46EE00F25A60 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 88B986822C3D46EE00F25A60 /* Base */; };
 		88B986852C3D46EF00F25A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B986842C3D46EF00F25A60 /* Assets.xcassets */; };
 		88B986882C3D46EF00F25A60 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 88B986872C3D46EF00F25A60 /* Base */; };
-		88B986922C3D631F00F25A60 /* Second VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B986912C3D631F00F25A60 /* Second VC.swift */; };
+		88B986922C3D631F00F25A60 /* RandomDishVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B986912C3D631F00F25A60 /* RandomDishVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		108967F62C48073F00E54029 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		108967FC2C4809C000E54029 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		88B986782C3D46EE00F25A60 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B9867B2C3D46EE00F25A60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88B9867D2C3D46EE00F25A60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		88B9867F2C3D46EE00F25A60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88B9867F2C3D46EE00F25A60 /* MainMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuVC.swift; sourceTree = "<group>"; };
 		88B986822C3D46EE00F25A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88B986842C3D46EF00F25A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88B986872C3D46EF00F25A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88B986892C3D46EF00F25A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88B986912C3D631F00F25A60 /* Second VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Second VC.swift"; sourceTree = "<group>"; };
+		88B986912C3D631F00F25A60 /* RandomDishVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDishVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		108967F92C48092500E54029 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				108967F62C48073F00E54029 /* Dish.swift */,
+				108967FC2C4809C000E54029 /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		108967FA2C48093400E54029 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88B9867F2C3D46EE00F25A60 /* MainMenuVC.swift */,
+				88B986912C3D631F00F25A60 /* RandomDishVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		108967FB2C48095E00E54029 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88B986812C3D46EE00F25A60 /* Main.storyboard */,
+				88B986862C3D46EF00F25A60 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		88B9866F2C3D46EE00F25A60 = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +91,10 @@
 			children = (
 				88B9867B2C3D46EE00F25A60 /* AppDelegate.swift */,
 				88B9867D2C3D46EE00F25A60 /* SceneDelegate.swift */,
-				88B9867F2C3D46EE00F25A60 /* ViewController.swift */,
-				88B986912C3D631F00F25A60 /* Second VC.swift */,
-				88B986812C3D46EE00F25A60 /* Main.storyboard */,
+				108967F92C48092500E54029 /* Model */,
+				108967FB2C48095E00E54029 /* Views */,
+				108967FA2C48093400E54029 /* Controllers */,
 				88B986842C3D46EF00F25A60 /* Assets.xcassets */,
-				88B986862C3D46EF00F25A60 /* LaunchScreen.storyboard */,
 				88B986892C3D46EF00F25A60 /* Info.plist */,
 			);
 			path = FoodApp;
@@ -141,10 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88B986802C3D46EE00F25A60 /* ViewController.swift in Sources */,
+				108967F72C48073F00E54029 /* Dish.swift in Sources */,
+				108967FD2C4809C000E54029 /* Data.swift in Sources */,
+				88B986802C3D46EE00F25A60 /* MainMenuVC.swift in Sources */,
 				88B9867C2C3D46EE00F25A60 /* AppDelegate.swift in Sources */,
 				88B9867E2C3D46EE00F25A60 /* SceneDelegate.swift in Sources */,
-				88B986922C3D631F00F25A60 /* Second VC.swift in Sources */,
+				88B986922C3D631F00F25A60 /* RandomDishVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z297955P8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoodApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -327,6 +360,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z297955P8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoodApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
