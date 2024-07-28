@@ -8,7 +8,7 @@
 import UIKit
 
 class MainMenuVC: UIViewController {
-        
+        var alias = Alias()
     var data = Data()
     
     @IBAction func editButtonAction(_ sender: UIButton) {
@@ -18,11 +18,11 @@ class MainMenuVC: UIViewController {
     @IBAction func randomDishPressed(_ sender: UIButton) {
         data.selectedDish = data.arrayOfDishes[Int.random(in: 0..<3)]
         
-        self.performSegue(withIdentifier: "goToSecondVS", sender: self)
+        self.performSegue(withIdentifier: alias.goToSecondVC, sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToSecondVS" {
+        if segue.identifier == alias.goToSecondVC {
             let destinationVC = segue.destination as! RandomDishVC
             if data.selectedDish != nil {
                 let unwrappedDish = data.selectedDish!
@@ -35,6 +35,8 @@ class MainMenuVC: UIViewController {
             }
         }
     }
+    
+    
 }
 
 

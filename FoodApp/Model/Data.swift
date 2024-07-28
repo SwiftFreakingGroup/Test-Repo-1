@@ -18,3 +18,7 @@ struct Data {
     var selectedDish: Dish?
     
 }
+
+struct Alias {
+    let goToSecondVC = "goToSecondVC"
+}

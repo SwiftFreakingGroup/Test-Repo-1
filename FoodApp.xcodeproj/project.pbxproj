@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		108967F72C48073F00E54029 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108967F62C48073F00E54029 /* Dish.swift */; };
 		108967FD2C4809C000E54029 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108967FC2C4809C000E54029 /* Data.swift */; };
+		881DF8752C56659B0057102F /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881DF8742C56659B0057102F /* Time.swift */; };
 		88B9867C2C3D46EE00F25A60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B9867B2C3D46EE00F25A60 /* AppDelegate.swift */; };
 		88B9867E2C3D46EE00F25A60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B9867D2C3D46EE00F25A60 /* SceneDelegate.swift */; };
 		88B986802C3D46EE00F25A60 /* MainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B9867F2C3D46EE00F25A60 /* MainMenuVC.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		108967F62C48073F00E54029 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		108967FC2C4809C000E54029 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		881DF8742C56659B0057102F /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		88B986782C3D46EE00F25A60 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B9867B2C3D46EE00F25A60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88B9867D2C3D46EE00F25A60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			children = (
 				108967F62C48073F00E54029 /* Dish.swift */,
 				108967FC2C4809C000E54029 /* Data.swift */,
+				881DF8742C56659B0057102F /* Time.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				108967F72C48073F00E54029 /* Dish.swift in Sources */,
 				108967FD2C4809C000E54029 /* Data.swift in Sources */,
+				881DF8752C56659B0057102F /* Time.swift in Sources */,
 				88B986802C3D46EE00F25A60 /* MainMenuVC.swift in Sources */,
 				88B9867C2C3D46EE00F25A60 /* AppDelegate.swift in Sources */,
 				88B9867E2C3D46EE00F25A60 /* SceneDelegate.swift in Sources */,
