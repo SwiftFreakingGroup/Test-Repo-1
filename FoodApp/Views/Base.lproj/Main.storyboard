@@ -126,11 +126,11 @@
                                         </constraints>
                                     </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="eraser.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="spB-Sj-hjy" userLabel="Image dish View">
-                                        <rect key="frame" x="0.0" y="52.5" width="355" height="329"/>
+                                        <rect key="frame" x="0.0" y="52.5" width="355" height="248"/>
                                         <color key="backgroundColor" red="0.82352948189999997" green="0.58039218189999997" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T16-kX-oW9" userLabel="Name dish Label">
-                                        <rect key="frame" x="0.5" y="392" width="354" height="67"/>
+                                        <rect key="frame" x="0.5" y="311" width="354" height="67"/>
                                         <color key="backgroundColor" red="0.82352948189999997" green="0.58039218189999997" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="354" id="BCi-ed-rwZ"/>
@@ -141,7 +141,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discription of dishes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMK-Sb-KYI" userLabel="Discriptiom dish Label">
-                                        <rect key="frame" x="0.0" y="469" width="355" height="225"/>
+                                        <rect key="frame" x="0.0" y="388" width="355" height="225"/>
                                         <color key="backgroundColor" red="0.82352948189999997" green="0.58039218189999997" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="225" id="RrF-S4-7fO"/>
@@ -152,7 +152,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6rn-na-NYM" userLabel="All Button Stack View">
-                                        <rect key="frame" x="1.5" y="704" width="352" height="142"/>
+                                        <rect key="frame" x="1.5" y="623" width="352" height="223"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azr-fa-c6a">
                                                 <rect key="frame" x="93" y="0.0" width="166" height="61"/>
@@ -166,8 +166,19 @@
                                                     <color key="baseBackgroundColor" red="0.82352948189999997" green="0.58039218189999997" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fb-k3-dJD">
+                                                <rect key="frame" x="93" y="81" width="166" height="61"/>
+                                                <color key="backgroundColor" red="0.82352948189999997" green="0.58039218189999997" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="61" id="530-ei-Akw"/>
+                                                    <constraint firstAttribute="width" constant="166" id="gjl-Me-k9l"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qHs-ET-ifZ" userLabel="Button Stack View">
-                                                <rect key="frame" x="0.0" y="81" width="352" height="61"/>
+                                                <rect key="frame" x="0.0" y="162" width="352" height="61"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sE-rn-FZx">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="61"/>

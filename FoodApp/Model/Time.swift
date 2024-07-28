@@ -9,5 +9,4 @@ import Foundation
 
 struct Time: Decodable {
     var time: String
-    
 }
