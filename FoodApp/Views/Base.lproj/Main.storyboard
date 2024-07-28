@@ -232,6 +232,7 @@
                         <outlet property="dishDescriptionLabel" destination="wMK-Sb-KYI" id="zBW-U7-Cs2"/>
                         <outlet property="dishImageView" destination="spB-Sj-hjy" id="Ml6-db-kF3"/>
                         <outlet property="dishNameLabel" destination="T16-kX-oW9" id="cm1-xG-icL"/>
+                        <outlet property="timeLabel" destination="0Fb-k3-dJD" id="SYc-Vy-RJv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j21-Lj-q70" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

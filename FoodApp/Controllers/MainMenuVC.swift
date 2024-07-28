@@ -21,28 +21,28 @@ class MainMenuVC: UIViewController {
         self.performSegue(withIdentifier: alias.goToSecondVC, sender: self)
         
         //MARK: - Parsing JSON
-        let urlString = "https://timeapi.io/api/Time/current/ip?ipAddress=\(getIP.getIPAddress())"
-        
-        guard let url = URL(string: urlString) else { return }
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            if let error = error {
-                print("Error: \(error)")
-                return
-            }
-            
-            guard let data = data else {
-                print("Error: no data")
-                return
-            }
-            do {
-                let time = try JSONDecoder().decode(Time.self, from: data)
-                print(time.time)
-            } catch {
-                print(error)
-            }
-            
-            
-        } .resume()
+//        let urlString = "https://timeapi.io/api/Time/current/ip?ipAddress=\(getIP.getIPAddress())"
+//        
+//        guard let url = URL(string: urlString) else { return }
+//        URLSession.shared.dataTask(with: url) { data, response, error in
+//            if let error = error {
+//                print("Error: \(error)")
+//                return
+//            }
+//            
+//            guard let data = data else {
+//                print("Error: no data")
+//                return
+//            }
+//            do {
+//                let time = try JSONDecoder().decode(Time.self, from: data)
+//                print(time.time)
+//            } catch {
+//                print(error)
+//            }
+//            
+//            
+//        } .resume()
         
     }
     
@@ -51,7 +51,7 @@ class MainMenuVC: UIViewController {
             let destinationVC = segue.destination as! RandomDishVC
             if data.selectedDish != nil {
                 let unwrappedDish = data.selectedDish!
-                
+               
                 destinationVC.dishName = unwrappedDish.name
                 destinationVC.dishDescription = unwrappedDish.descriptionOfDish
                 destinationVC.dishImage = unwrappedDish.image

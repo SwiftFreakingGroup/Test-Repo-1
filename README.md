@@ -1,4 +1,3 @@
 Test Repo
 
-
-added new storyboards into gitgub Seki4 branch
+During pop-up Second, time label upload with delay.

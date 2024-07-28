@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Time: Decodable {
+struct Time: Codable {
     var time: String
 }
