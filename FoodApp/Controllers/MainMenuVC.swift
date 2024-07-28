@@ -8,9 +8,9 @@
 import UIKit
 
 class MainMenuVC: UIViewController {
-        var alias = Alias()
+    var alias = Alias()
     var data = Data()
-    
+    var getIP = Model()
     @IBAction func editButtonAction(_ sender: UIButton) {
         print("Edid button pressed")
     }
@@ -19,6 +19,31 @@ class MainMenuVC: UIViewController {
         data.selectedDish = data.arrayOfDishes[Int.random(in: 0..<3)]
         
         self.performSegue(withIdentifier: alias.goToSecondVC, sender: self)
+        
+        //MARK: - Parsing JSON
+        let urlString = "https://timeapi.io/api/Time/current/ip?ipAddress=\(getIP.getIPAddress())"
+        
+        guard let url = URL(string: urlString) else { return }
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                print("Error: \(error)")
+                return
+            }
+            
+            guard let data = data else {
+                print("Error: no data")
+                return
+            }
+            do {
+                let time = try JSONDecoder().decode(Time.self, from: data)
+                print(time.time)
+            } catch {
+                print(error)
+            }
+            
+            
+        } .resume()
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
